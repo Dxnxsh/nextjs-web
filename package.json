@@ -1,0 +1,28 @@
+{
+  "name": "create-next-example-app",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "cross-env NODE_ENV=production node server.js",
+    "lint": "eslint *.js **/*.js"
+  },
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "compression": "^1.7.4",
+    "cross-env": "^5.2.0",
+    "express": "^4.16.4",
+    "lax.js": "^1.2.3",
+    "next": "^8.1.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-protected-mailto": "^1.0.3",
+    "use-lax": "^2.0.2",
+    "next-purgecss": "^3.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-react": "^7.12.4"
+  }
+}

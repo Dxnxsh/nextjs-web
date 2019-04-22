@@ -1,0 +1,391 @@
+html {
+	background: #00b299;
+}
+
+body {
+	font-family: 'Work Sans', sans-serif;
+	transition: opacity 500ms;
+	overflow-x: hidden;
+}
+.h3 {
+	font-weight: 500;
+}
+
+body.loading {
+	opacity: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 500;
+}
+
+#header {
+	width: 100vw;
+	height: 100vh;
+	align-content: center;
+	justify-content: center;
+	display: flex;
+	overflow: hidden;
+}
+
+#shader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+#main {
+	/*padding-top: 35pt;*/
+	/*background: #faf2ff;*/
+	z-index: 2;
+	position: relative;
+	/*width: 100vw;*/
+	font-weight: 400;
+	color: #3e3c8d;
+}
+
+#vision {
+	background: #2D3F4D;
+	padding: 5rem;
+	color: #f1f2f1;
+}
+
+.mobile #vision {
+	padding: 2rem;
+}
+
+.mobile #cosm {
+	padding: 4rem 0 8rem 0;
+}
+
+.mobile #otherapps {
+	padding: 4rem 0 2rem;
+}
+
+
+.mobile #about {
+	padding: 4rem 0;
+}
+
+#header #logo {
+	margin-top: calc( 43.2vh - 20pt );
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#header #logo img {
+	height: 220pt;
+	z-index: 2;
+	position: absolute;
+}
+
+#header #scrollArrow {
+	position: fixed;
+	bottom: 40pt;
+	width: 20pt;
+}
+
+.mobile #logo img {
+	z-index: 1;
+	height: 140pt;
+  max-height: 60vw;
+}
+
+#cosm {
+	background: #c5d3d4;
+	color: #2D3F4D;
+	padding: 8rem 0;
+}
+
+#cosm-nopadtop {
+	background: #c5d3d4;
+	color: #2D3F4D;
+	padding: 8rem 0;
+	padding-top: 0rem;
+}
+
+#cosm-nopadbottom {
+	background: #c5d3d4;
+	color: #2D3F4D;	
+	margin-top: 5rem;
+	padding: 8rem 0;
+}
+
+#otherapps {
+	background: #e4eaea;
+	padding: 8rem 0;
+}
+
+#footer {
+	padding: 40pt 0;
+	justify-content: center;
+	width: 100%;
+	background: #2D3F4D;
+	display: flex;
+}
+
+#footer #container {
+	width: 160pt;
+	text-align: center;
+}
+
+#footer #container img {
+	width: 140pt;
+}
+
+.app-title {
+	/* margin-bottom: 0; */
+}
+
+.app-subtitle {
+	font-size: 16pt;
+	opacity: 0.6;
+	font-style: italic;
+}
+
+#appstore-link {
+	margin-top: 1rem;
+	display: inline-block;
+}
+
+.appstore-link-small img {
+	width: 130pt;
+}
+
+#appstore-link:hover {
+	opacity: 0.6;
+}
+
+#appstore-link img {
+	width: 160pt;
+}
+
+.screenshot {
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 500pt;
+}
+
+.mobile .screenshot {
+	margin-top: 20pt;
+	height: 80vh;
+	width: 100%;
+	margin-bottom: -60pt;
+	background-size: cover;
+}
+
+li {
+	padding-left: 14pt;
+	margin-bottom: 4pt;
+}
+
+#accolades {
+	padding-top: 5rem;
+}
+
+#accolades img {
+	height: 100pt;
+	margin: 20pt 0;
+}
+
+#accolades .columns {
+	text-align: center;
+}
+
+#about {
+	padding: 8rem 0;
+	background: #44B19A;
+	color: white;
+}
+
+/*#about img {
+width: 200pt;
+height: 200pt;
+border-radius: 100pt;
+display: inline-block;
+}*/
+
+.iphone-small {
+	height: 260pt;
+	background-size: 78%;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+#profilePics {
+	white-space: nowrap;
+}
+
+#alex, #jonah {
+	width: 45%;
+	border-radius: 100%;
+}
+
+#alex {
+	margin-left: 0%;
+}
+
+#jonah {
+	margin-left: 5%;
+}
+
+@media (max-width: 900px) {
+	#alex, #jonah {
+		width: 160pt;
+		margin-left: 10%;
+		margin-bottom: 10pt;
+	}
+
+	#profilePics {
+		white-space: normal;
+	}
+}
+
+@media (max-width: 550px) {
+	#alex, #jonah {
+		width: 47.5%;
+		margin-top: 20pt;
+	}
+
+	#alex {
+		margin-left: 0%;
+	}
+
+	#jonah {
+		margin-left: 5%;
+	}
+
+	#profilePics {
+		white-space: nowrap;
+	}
+
+	#accolades img {
+		height: 85pt !important;
+	}
+
+	#accolades .three.columns {
+		width: 50%;
+	}
+
+	#breathesonic {
+		margin-top: 4rem !important;
+	}
+
+	.iphone-small {
+		margin-top: 3rem;
+		background-size: 200pt !important;
+    border-bottom: 1px solid #c7ced1;
+	}
+}
+
+@media (max-width: 1000px) {
+	.applisting {
+		width: 100% !important;
+		margin-left: 0 !important;
+	}
+
+	.applisting .iphone-small {
+		height: 230pt;
+		background-size: 170pt;
+	}
+
+	#breathesonic {
+    margin-top: 8rem;
+	}
+
+	#accolades img {
+		height: 70pt;
+	}
+}
+
+@media (min-width: 1200px) {
+	.screenshot {
+		width: 220pt !important;
+		height: 480pt !important;
+		margin-bottom: -60pt;
+		margin-top: -20pt;
+		background-size: cover !important;
+	}
+
+}
+
+.noselect { 
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	 user-select: none;
+}
+
+#links {
+    /*position: relative;*/
+    /*top: 25pt;*/
+    /*text-align: right;*/
+    /*margin-left: -190pt;*/
+    /*padding-right: 180pt;*/
+}
+
+.link {
+    font-size: 12pt;
+    color: white;
+    padding: 5pt 0;
+    text-align: left;
+    /* margin: 10pt 0; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.link img {
+    height: 30pt;
+    margin-right: 10pt;
+}
+
+.link a {
+    color: white;
+}
+
+
+.link a:hover {
+    opacity: 0.7;
+}
+
+    .rainbow{
+        -webkit-animation: color-change 1s infinite;
+        -moz-animation: color-change 1s infinite;
+        -o-animation: color-change 1s infinite;
+        -ms-animation: color-change 1s infinite;
+        animation: color-change 1s infinite;
+    }
+
+    @-webkit-keyframes color-change {
+        0% { color: red; }
+        50% { color: blue; }
+        100% { color: red; }
+    }
+    @-moz-keyframes color-change {
+        0% { color: red; }
+        50% { color: blue; }
+        100% { color: red; }
+    }
+    @-ms-keyframes color-change {
+        0% { color: red; }
+        50% { color: blue; }
+        100% { color: red; }
+    }
+    @-o-keyframes color-change {
+        0% { color: red; }
+        50% { color: blue; }
+        100% { color: red; }
+    }
+    @keyframes color-change {
+        0% { color: red; }
+        50% { color: blue; }
+        100% { color: red; }
+    }
+			
+			
